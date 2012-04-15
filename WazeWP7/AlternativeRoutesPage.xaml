@@ -24,7 +24,7 @@
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="Auto"/>
                 </Grid.ColumnDefinitions>
-                
+
                 <Grid Grid.Column="0" Tap="ListItemGrid_Tap">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="*"/>
@@ -102,10 +102,12 @@
 
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock x:Name="PageTitle" Text="Compare routes" Margin="9,-7,0,0" 
+            <!--<TextBlock x:Name="PageTitle" Text="Compare routes" Margin="9,-7,0,0" 
                        Style="{StaticResource PhoneTextTitle1Style}"
                        FontSize="{StaticResource PhoneFontSizeExtraLarge}"
-                       HorizontalAlignment="Center"/>
+                       HorizontalAlignment="Center"/>-->
+            <TextBlock x:Name="PageTitle" Text="Compare Routes" Margin="0,0,0,0" 
+                       Style="{StaticResource PhoneTextTitle1Style}" />
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
@@ -128,12 +130,12 @@
                        Text="{Binding DisclaimerText}"
                        Foreground="Black"
                        TextWrapping="Wrap"/>
-            <local:ImageButton Grid.Row="3" x:Name="ShowAllButton" 
+            <!--<local:ImageButton Grid.Row="3" x:Name="ShowAllButton" 
                                Content ="Map"
                                Style="{StaticResource WazeImageButtonDefaultStyle}"
                                Margin="10,12"
-                               Click="ShowAllButton_Click"/>
-
+                               Click="ShowAllButton_Click"/>-->
+            <Button Content="Map" Grid.Row="3" Height="72" HorizontalAlignment="Center" Margin="0,0,0,0" Name="ShowAllButton" Click="ShowAllButton_Click" VerticalAlignment="Top" Width="160" />
         </Grid>
     </Grid>
 
